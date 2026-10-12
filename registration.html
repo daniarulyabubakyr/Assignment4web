@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            Forms Project
+        </a>
+
+        <div class="navbar-nav flex-row flex-wrap gap-3">
+            <a class="nav-link" href="index.html">
+                Task 0
+            </a>
+
+            <a class="nav-link" href="validation.html">
+                Task 1
+            </a>
+
+            <a class="nav-link" href="bootstrap-form.html">
+                Task 2
+            </a>
+
+            <a class="nav-link" href="bootstrap-validation.html">
+                Task 3
+            </a>
+
+            <a class="nav-link" href="registration.html">
+                Task 4
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="container py-5">
+
+    <div class="card shadow-sm mx-auto"
+         style="max-width: 750px;">
+
+        <div class="card-body p-4">
+
+            <h2 class="text-center mb-2">
+                Create Account
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+                Fill in the form to register.
+            </p>
+
+            <form id="registrationForm"
+                  class="row g-3"
+                  novalidate>
+
+                <!-- First Name -->
+                <div class="col-md-6">
+                    <label for="firstName"
+                           class="form-label">
+                        First Name
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           id="firstName"
+                           name="firstName"
+                           minlength="2"
+                           placeholder="First name"
+                           required>
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Enter at least 2 characters.
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-6">
+                    <label for="lastName"
+                           class="form-label">
+                        Last Name
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           id="lastName"
+                           name="lastName"
+                           minlength="2"
+                           placeholder="Last name"
+                           required>
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Enter at least 2 characters.
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12">
+                    <label for="email"
+                           class="form-label">
+                        Email
+                    </label>
+
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           name="email"
+                           placeholder="example@gmail.com"
+                           required>
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Enter a valid email address.
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="col-md-6">
+                    <label for="password"
+                           class="form-label">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           class="form-control"
+                           id="password"
+                           name="password"
+                           minlength="8"
+                           placeholder="Minimum 8 characters"
+                           required>
+
+                    <div class="valid-feedback">
+                        Strong enough!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Minimum 8 characters required.
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-6">
+                    <label for="confirmPassword"
+                           class="form-label">
+                        Confirm Password
+                    </label>
+
+                    <input type="password"
+                           class="form-control"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="Repeat password"
+                           required>
+
+                    <div class="valid-feedback">
+                        Passwords match!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Passwords must match.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">
+                        Gender
+                    </label>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="gender"
+                               id="male"
+                               value="male"
+                               required>
+
+                        <label class="form-check-label"
+                               for="male">
+                            Male
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="gender"
+                               id="female"
+                               value="female">
+
+                        <label class="form-check-label"
+                               for="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <label class="form-label">
+                        Hobbies
+                    </label>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               id="reading"
+                               name="hobbies"
+                               value="reading">
+
+                        <label class="form-check-label"
+                               for="reading">
+                            Reading
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               id="sports"
+                               name="hobbies"
+                               value="sports">
+
+                        <label class="form-check-label"
+                               for="sports">
+                            Sports
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               id="music"
+                               name="hobbies"
+                               value="music">
+
+                        <label class="form-check-label"
+                               for="music">
+                            Music
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="country"
+                           class="form-label">
+                        Country
+                    </label>
+
+                    <select class="form-select"
+                            id="country"
+                            name="country"
+                            required>
+
+                        <option value="">
+                            Select your country
+                        </option>
+                        <option value="kz">
+                            Kazakhstan
+                        </option>
+                        <option value="uz">
+                            Uzbekistan
+                        </option>
+                        <option value="kg">
+                            Kyrgyzstan
+                        </option>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Please select a country.
+                    </div>
+                </div>
+
+
+                <div class="col-12 d-flex gap-2">
+
+                    <button type="submit"
+                            class="btn btn-primary flex-grow-1">
+                        Register
+                    </button>
+
+                    <button type="reset"
+                            class="btn btn-outline-secondary">
+                        Reset
+                    </button>
+
+                </div>
+
+                <div class="col-12">
+                    <div id="successMessage"
+                         class="alert alert-success d-none">
+                        Registration validated successfully!
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    const form = document.getElementById("registrationForm");
+    const password = document.getElementById("password");
+    const confirmPassword =
+        document.getElementById("confirmPassword");
+    const successMessage =
+        document.getElementById("successMessage");
+
+    function validatePasswords() {
+        if (confirmPassword.value !== password.value) {
+            confirmPassword.setCustomValidity(
+                "Passwords do not match"
+            );
+        } else {
+            confirmPassword.setCustomValidity("");
+        }
+    }
+
+    function validateField(field) {
+        if (field.checkValidity()) {
+            field.classList.remove("is-invalid");
+            field.classList.add("is-valid");
+        } else {
+            field.classList.remove("is-valid");
+            field.classList.add("is-invalid");
+        }
+    }
+
+    const fields = form.querySelectorAll(
+        "input:not([type=radio]):not([type=checkbox]), select"
+    );
+
+    fields.forEach(field => {
+        field.addEventListener("input", function () {
+            validatePasswords();
+            validateField(field);
+
+            if (field === password) {
+                validateField(confirmPassword);
+            }
+
+            successMessage.classList.add("d-none");
+        });
+
+        field.addEventListener("change", function () {
+            validatePasswords();
+            validateField(field);
+            successMessage.classList.add("d-none");
+        });
+    });
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        validatePasswords();
+
+        fields.forEach(field => {
+            validateField(field);
+        });
+
+        const genderSelected =
+            form.querySelector('input[name="gender"]:checked');
+
+        if (!genderSelected) {
+            alert("Please select your gender.");
+        }
+
+        if (form.checkValidity() && genderSelected) {
+            successMessage.classList.remove("d-none");
+        } else {
+            successMessage.classList.add("d-none");
+        }
+    });
+
+    form.addEventListener("reset", function () {
+        fields.forEach(field => {
+            field.classList.remove("is-valid", "is-invalid");
+        });
+
+        confirmPassword.setCustomValidity("");
+        successMessage.classList.add("d-none");
+    });
+</script>
+
+
+</body>
+</html>

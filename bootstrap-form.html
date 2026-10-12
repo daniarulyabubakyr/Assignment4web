@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <title>Bootstrap Contact Form</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body class="bg-light">
+
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            Forms Project
+        </a>
+
+        <div class="navbar-nav flex-row flex-wrap gap-3">
+            <a class="nav-link" href="index.html">
+                Task 0
+            </a>
+
+            <a class="nav-link" href="validation.html">
+                Task 1
+            </a>
+
+            <a class="nav-link" href="bootstrap-form.html">
+                Task 2
+            </a>
+
+            <a class="nav-link" href="bootstrap-validation.html">
+                Task 3
+            </a>
+
+            <a class="nav-link" href="registration.html">
+                Task 4
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+    <div class="container py-5">
+        <div class="card shadow-sm mx-auto"
+             style="max-width:650px;">
+
+            <div class="card-body p-4">
+                <h2 class="mb-2">Contact us</h2>
+
+                <p class="text-secondary mb-4">
+                    Send us a message
+                </p>
+                <form class="row g-3">
+
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">
+                            Name
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="name"
+                               name="name"
+                               placeholder="Your name"
+                               required>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               name="email"
+                               placeholder="Your email"
+                               required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            rows="4"
+                            maxlength="200"
+                            placeholder="Write your message......"
+                            aria-describedby="messageeHelp"
+                            required>
+                        </textarea>
+
+                        <div id="messageHelp" class="form-text">
+                            MAX 200 characters
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <button type="submit"
+                                class="btn btn-primary w-100">
+                            Send Message
+                        </button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
