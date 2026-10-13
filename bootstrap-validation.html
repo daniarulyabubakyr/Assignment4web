@@ -146,44 +146,9 @@
     </div>
 </div>
 
-<script>
-    const form = document.getElementById("contactForm");
-    const inputs = form.querySelectorAll(
-        "input, textarea"
-    );
 
-    function validateInput(input) {
-        if (input.checkValidity()) {
-            input.classList.remove("is-invalid");
-            input.classList.add("is-valid");
-        } else {
-            input.classList.remove("is-valid");
-            input.classList.add("is-invalid");
-        }
-    }
 
-    inputs.forEach(input => {
-        input.addEventListener("input", function () {
-            validateInput(input);
 
-            document.getElementById("successMessage")
-                .classList.add("d-none");
-        });
-    });
-
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        inputs.forEach(input => {
-            validateInput(input);
-        });
-
-        if (form.checkValidity()) {
-            document.getElementById("successMessage")
-                .classList.remove("d-none");
-        }
-    });
-</script>
 
 </body>
 </html>

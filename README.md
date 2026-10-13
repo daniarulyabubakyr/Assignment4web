@@ -13,7 +13,7 @@ The project consists of five tasks, each implemented on a separate HTML page.
 - **HTML5** — Creating forms and page structure
 - **CSS3** — Custom styling
 - **Bootstrap 5** — Responsive layout and form styling
-- **JavaScript** — Form validation and interactive feedback
+
 
 JavaScript code is included directly in the relevant HTML files using `<script>` tags. No separate `script.js` file is required.
 
